@@ -1,0 +1,34 @@
+--- encoding-0.2.33/Cargo.toml	2016-08-28T16:53:46+00:00
++++ encoding-0.2.33/Cargo.toml	2019-06-23T09:01:31.586509+00:00
+@@ -10,6 +10,7 @@
+ keywords = ["encoding", "unicode", "charset"]
+ readme = "README.md"
+ license = "MIT"
++exclude = ["/Makefile", "/src/index/*"]
+ 
+ [lib]
+ name = "encoding"
+@@ -24,23 +25,18 @@
+ 
+ [dependencies.encoding-index-singlebyte]
+ version = "~1.20141219.5"
+-path = "src/index/singlebyte"
+ 
+ [dependencies.encoding-index-korean]
+ version = "~1.20141219.5"
+-path = "src/index/korean"
+ 
+ [dependencies.encoding-index-japanese]
+ version = "~1.20141219.5"
+-path = "src/index/japanese"
+ 
+ [dependencies.encoding-index-simpchinese]
+ version = "~1.20141219.5"
+-path = "src/index/simpchinese"
+ 
+ [dependencies.encoding-index-tradchinese]
+ version = "~1.20141219.5"
+-path = "src/index/tradchinese"
+ 
+ [dev-dependencies]
+ getopts = "0.2" # for examples
